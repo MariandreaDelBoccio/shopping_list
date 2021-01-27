@@ -1,0 +1,13 @@
+* {
+  margin: 10px;
+}
+
+#new {
+  text-align: center;
+  margin-top: 10px;
+}
+
+mat-card {
+  text-align: center;
+  background-color: darkgray;
+}

@@ -1,0 +1,21 @@
+<mat-list class="row" [ngClass]="{'completed': item.completed}" id="{{item.id}}">
+    <mat-list-item>
+    <div class="title">
+        <input type="checkbox" [checked]="item.completed" (change)="onToggle(item)">
+        {{item.title}}
+    </div>
+    <div class="price">
+        {{item.price | currency: 'EUR'}}
+    </div>
+    <div class="quantity">
+        {{item.quantity}}
+    </div>
+    <div class="total">
+        {{(item.price * item.quantity)}}
+    </div>
+    <div class="actions">
+        <button (click)="onDelete(item)">Eliminar</button>
+    </div>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    </mat-list>

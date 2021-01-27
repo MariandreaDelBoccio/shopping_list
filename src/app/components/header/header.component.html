@@ -1,0 +1,14 @@
+<mat-toolbar>
+<button mat-button [matMenuTriggerFor]="aboveMenu">Menú</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item routerLink="/">Home</button>
+  <button mat-menu-item routerLink="/add">Nuevo</button>
+</mat-menu>
+
+</mat-toolbar>
+
+<!-- 
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item routerLink="/">Home</button>
+  <button mat-menu-item router="/add">Nuevo</button>
+</mat-menu> -->

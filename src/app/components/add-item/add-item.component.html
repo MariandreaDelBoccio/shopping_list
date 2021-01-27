@@ -1,0 +1,20 @@
+<h2 id="new">Nuevo artículo</h2>
+<mat-card>
+<form (ngSubmit)="onSubmit()">  
+    <mat-form-field>
+        <mat-label>Nombre del artículo</mat-label>
+        <input matInput placeholder="Ex. Pizza" type="text" name="title" [(ngModel)]="title">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Precio</mat-label>
+        <input matInput placeholder="Ex. 3€" type="text" name="price" [(ngModel)]="price">
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>Cantidad</mat-label>
+        <input matInput placeholder="Ex. 3" type="number" name="quantity" [(ngModel)]="quantity">
+    </mat-form-field>
+
+    <!-- <input type="submit" value="Crear"> -->
+    <button mat-raised-button type="submit" color="accent">Crear</button>
+</form>
+</mat-card>
